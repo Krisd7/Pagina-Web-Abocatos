@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Abocatos</title>
+    <style>
+        body {
+            font-family: 'Open Sauce', sans-serif;
+            background-color: #f7f9fc;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #004aad;
+            padding: 10px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+            padding: 10px 20px;
+            border: 2px solid #004aad;
+            border-radius: 15px;
+            transition: background-color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #003680;
+        }
+        .titulo-principal {
+            color: #004aad;
+            font-size: 46.6px;
+            text-align: left;
+            margin: 20px 0 0 20px;
+        }
+        .bienvenida {
+            margin: 20px;
+            font-size: 24px;
+            color: #333;
+            background-color: #e7eff6;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .servicios {
+            margin: 20px;
+            font-size: 20px;
+            color: #666;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .cta {
+            margin: 20px;
+            text-align: center;
+            background-color: #e7eff6;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .cta button {
+            font-size: 18px;
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #004aad;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .cta button:hover {
+            background-color: #003680;
+        }
+        .cta h2 {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Inicio</a>
+        <a href="clientes.html">Clientes</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="quienes-somos.html">Quienes Somos</a>
+        <a href="tarifas.html">Tarifas</a>
+        <a href="contactenos.html">Contactenos</a>
+        <a href="ingreso.html">Ingreso Plataforma</a>
+    </div>
+    <h1 class="titulo-principal">Abocatos</h1>
+
+    <div class="bienvenida">
+        <h2>Bienvenidos a Abocatos</h2>
+        <p>En Abocatos, estamos comprometidos a proporcionar servicios legales excepcionales. Nuestra misión es proteger y defender los derechos de nuestros clientes con dedicación y profesionalismo.</p>
+    </div>
+
+    <div class="servicios">
+        <h2>Servicios Destacados</h2>
+        <ul>
+            <li>Asesoría Jurídica</li>
+            <li>Litigios Civiles y Penales</li>
+            <li>Reconocimiento de Pensión</li>
+            <li>Cobro de Cartera Morosa</li>
+        </ul>
+    </div>
+
+    <div class="cta">
+        <h2>Contacta con Nosotros</h2>
+        <p>¿Necesitas asesoría legal? Agenda una consulta con nosotros y descubre cómo podemos ayudarte.</p>
+        <button onclick="window.location.href='contactenos.html'">Solicitar Consulta</button>
+    </div>
+</body>
+</html>

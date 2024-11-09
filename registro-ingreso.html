@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Abocatos</title>
+    <style>
+        body {
+            font-family: 'Open Sauce', sans-serif;
+            background-color: #f7f9fc;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #004aad;
+            padding: 10px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+            padding: 10px 20px;
+            border: 2px solid #004aad;
+            border-radius: 15px;
+            transition: background-color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #003680;
+        }
+        .section {
+            margin: 20px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+        }
+        .form-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 45%;
+        }
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-container label {
+            margin-top: 10px;
+        }
+        .form-container input {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container button {
+            margin-top: 20px;
+            font-size: 18px;
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #004aad;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .form-container button:hover {
+            background-color: #003680;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Inicio</a>
+        <a href="clientes.html">Clientes</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="quienes-somos.html">Quienes Somos</a>
+        <a href="tarifas.html">Tarifas</a>
+        <a href="contactenos.html">Contactenos</a>
+        <a href="ingreso.html">Ingreso Plataforma</a>
+    </div>
+    <section class="section">
+        <div class="form-container">
+            <h2>Registrar</h2>
+            <form action="register.php" method="POST">
+                <label for="new_usuario">Usuario:</label>
+                <input type="text" id="new_usuario" name="new_usuario" required>
+
+                <label for="new_correo">Correo Electrónico:</label>
+                <input type="email" id="new_correo" name="new_correo" required>
+
+                <label for="new_contraseña">Contraseña:</label>
+                <input type="password" id="new_contraseña" name="new_contraseña" required>
+
+                <label for="confirm_contraseña">Confirmar Contraseña:</label>
+                <input type="password" id="confirm_contraseña" name="confirm_contraseña" required>
+
+                <button type="submit">Registrar</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
